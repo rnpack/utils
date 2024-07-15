@@ -1,3 +1,5 @@
+import { Buffer } from 'buffer';
+
 function isEmpty(text: unknown): boolean {
   if (!text) {
     return true;
@@ -44,7 +46,7 @@ function stringToBase64(input: string): string {
   return Buffer?.from(input, 'utf8').toString('base64');
 }
 
-function removeNullCharactorsFromText(text: string) {
+function removeNullCharactersFromText(text: string) {
   const alphaNumericRegex = new RegExp(/[^a-z0-9]/gi);
   return text
     ?.replaceAll('\0', '')
@@ -67,7 +69,7 @@ export {
   stringToByteArray,
   base64ToString,
   stringToBase64,
-  removeNullCharactorsFromText,
+  removeNullCharactersFromText,
   convertStringToNumber,
   splitString,
 };
