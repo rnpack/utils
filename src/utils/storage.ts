@@ -34,12 +34,19 @@ async function clearAll() {
   await AsyncStorage.clear();
 }
 
+async function getAllKey(): Promise<ReadonlyArray<string>> {
+  const allKeys: ReadonlyArray<string> = await AsyncStorage.getAllKeys();
+
+  return allKeys;
+}
+
 const storage = {
   set,
   get,
   remove,
   merge,
   clearAll,
+  getAllKey,
 };
 
 export { storage };
