@@ -19,11 +19,11 @@ if (Platform.OS === 'android') {
 }
 
 function responsiveHeight(size: number): number {
-  return (longDimension / guidelineBaseHeight) * size;
+  return Math.round((longDimension / guidelineBaseHeight) * size);
 }
 
 function responsiveSize(size: number): number {
-  return (shortDimension / guidelineBaseWidth) * size;
+  return Math.round((shortDimension / guidelineBaseWidth) * size);
 }
 
 const responsive = { height: responsiveHeight, size: responsiveSize };
