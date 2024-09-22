@@ -5,6 +5,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
+    'plugin:eslint-plugin-prettier/recommended',
   ],
   env: {
     browser: true,
@@ -49,5 +50,5 @@ module.exports = {
     'react-native/no-single-element-style-arrays': [1],
     'react-native/no-unused-styles': [1],
   },
-  ignorePatterns: ['*.config.js'],
+  ignorePatterns: ['*.config.js', 'lib/*'],
 };
