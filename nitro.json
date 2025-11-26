@@ -1,0 +1,17 @@
+{
+  "cxxNamespace": ["rnpack_utils"],
+  "ios": {
+    "iosModuleName": "Utils"
+  },
+  "android": {
+    "androidNamespace": ["rnpack","utils"],
+    "androidCxxLibName": "rnpack_utils"
+  },
+  "autolinking": {
+    "Utils": {
+      "swift": "Utils",
+      "kotlin": "Utils"
+    }
+  },
+  "ignorePaths": ["node_modules"]
+}

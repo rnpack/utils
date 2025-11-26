@@ -1,4 +1,4 @@
-import { StyleSheet, View, Text } from 'react-native';
+import { Text, View, StyleSheet } from 'react-native';
 
 import { isEmpty } from '@rnpack/utils';
 
@@ -14,8 +14,8 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center',
     flex: 1,
+    alignItems: 'center',
     justifyContent: 'center',
   },
 });

@@ -4,46 +4,36 @@ Basic utilities will be available and ready to use
 
 ## Installation
 
+
 ```sh
-npm install @rnpack/utils
+npm install @rnpack/utils react-native-nitro-modules
+
+> `react-native-nitro-modules` is required as this library relies on [Nitro Modules](https://nitro.margelo.com/).
 ```
+
 
 ## Usage
 
-```js
-import {} from '@rnpack/utils';
 
+```js
+import { multiply } from '@rnpack/utils';
+
+// ...
+
+const result = multiply(3, 7);
 ```
+
 
 ## Contributing
 
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+- [Development workflow](CONTRIBUTING.md#development-workflow)
+- [Sending a pull request](CONTRIBUTING.md#sending-a-pull-request)
+- [Code of conduct](CODE_OF_CONDUCT.md)
 
 ## License
 
-The MIT License.
-
-## Author
-
-<table>
-  <tr>
-    <td >
-      <img src="https://avatars.githubusercontent.com/u/41302126?v=4" width="64" height="64" alt="Abiraman K">
-    </td>
-    <td>
-      <a href="https://github.com/AbiramanK" target="_blank">Abiraman K</a>
-    </td>
-  </tr>
-</table>
-
-## Thank you
-
-### Sponsors
-
-Thank you to all our sponsors! [Become a sponsor](https://opencollective.com/rnpack#sponsor) and get your image on our README on GitHub.
-
-<a href="https://opencollective.com/rnpack#sponsors" target="_blank"><img src="https://opencollective.com/rnpack/sponsors.svg?width=890" alt="@react-native-ui-design/dialog"></a>
-
+MIT
 
 ---
 
+Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
