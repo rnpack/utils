@@ -11,7 +11,7 @@ const [shortDimension, longDimension] =
 const guidelineBaseWidth = 375;
 let guidelineBaseHeight = 812;
 if (Platform.OS === 'android') {
-  const hgt = StatusBar.currentHeight;
+  const hgt = StatusBar.currentHeight ?? 0;
 
   if (hgt !== undefined) {
     guidelineBaseHeight = guidelineBaseHeight + hgt;

@@ -40,7 +40,7 @@
     "nitrogen": "nitrogen",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "release": "release-it --only-version",
+    "release": "release-it patch --only-version",
     "test": "jest"
   },
   "keywords": [

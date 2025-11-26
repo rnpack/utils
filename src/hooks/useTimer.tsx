@@ -18,7 +18,7 @@ function useTimer(
   const today = new Date();
   const todayUnix = today?.getTime();
 
-  const timeIntervalRef = useRef<NodeJS.Timeout>();
+  const timeIntervalRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
   const durationDate = useMemo(
     () => (props?.targetDate ? new Date(props?.targetDate) : new Date()),
