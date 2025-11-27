@@ -5,7 +5,7 @@ import com.facebook.react.bridge.NativeModule
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.module.model.ReactModuleInfoProvider
 
-class UtilsPackage : BaseReactPackage() {
+class RNPackUtilsPackage : BaseReactPackage() {
     override fun getModule(name: String, reactContext: ReactApplicationContext): NativeModule? {
         return null
     }
@@ -16,7 +16,7 @@ class UtilsPackage : BaseReactPackage() {
 
     companion object {
         init {
-            System.loadLibrary("rnpack_utils")
+            System.loadLibrary("RNPackUtils")
         }
     }
 }

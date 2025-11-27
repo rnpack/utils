@@ -1,6 +1,6 @@
 #include <jni.h>
-#include "rnpack_utilsOnLoad.hpp"
+#include "RNPackUtilsOnLoad.hpp"
 
 JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM* vm, void*) {
-  return margelo::nitro::rnpack_utils::initialize(vm);
+  return margelo::nitro::RNPackUtils::initialize(vm);
 }

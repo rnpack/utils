@@ -18,7 +18,7 @@ const basicNumberString = '999.0787';
 const basicNumber = 999.0787;
 const basicStringSplit = ['B', 'a', 's', 'i', 'c'];
 
-describe('Utils', () => {
+describe('RNPackUtils', () => {
   describe('String', () => {
     describe('isEmpty', () => {
       it('Undefined', () => {

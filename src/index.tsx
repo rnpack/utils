@@ -1,7 +1,8 @@
 import { NitroModules } from 'react-native-nitro-modules';
-import type { Utils } from './Utils.nitro';
+import type { RNPackUtils } from './RNPackUtils.nitro';
 
-const UtilsHybridObject = NitroModules.createHybridObject<Utils>('Utils');
+const UtilsHybridObject =
+  NitroModules.createHybridObject<RNPackUtils>('RNPackUtils');
 
 export function multiply(a: number, b: number): number {
   return UtilsHybridObject.multiply(a, b);

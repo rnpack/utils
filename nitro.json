@@ -1,17 +1,24 @@
 {
-  "cxxNamespace": ["rnpack_utils"],
+  "cxxNamespace": [
+    "RNPackUtils"
+  ],
   "ios": {
-    "iosModuleName": "Utils"
+    "iosModuleName": "RNPackUtils"
   },
   "android": {
-    "androidNamespace": ["rnpack","utils"],
-    "androidCxxLibName": "rnpack_utils"
+    "androidNamespace": [
+      "rnpack",
+      "utils"
+    ],
+    "androidCxxLibName": "RNPackUtils"
   },
   "autolinking": {
-    "Utils": {
-      "swift": "Utils",
-      "kotlin": "Utils"
+    "RNPackUtils": {
+      "swift": "RNPackUtils",
+      "kotlin": "RNPackUtils"
     }
   },
-  "ignorePaths": ["node_modules"]
+  "ignorePaths": [
+    "node_modules"
+  ]
 }

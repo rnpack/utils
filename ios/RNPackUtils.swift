@@ -1,4 +1,4 @@
-class Utils: HybridUtilsSpec {
+class RNPackUtils: HybridRNPackUtilsSpec {
     public func multiply(a: Double, b: Double) throws -> Double {
         return a * b
     }
