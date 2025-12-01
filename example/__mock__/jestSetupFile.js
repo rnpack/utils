@@ -1,5 +1,3 @@
 const jest = require('@jest/globals').jest;
 
-jest.mock('@rnpack/utils', () =>
-  require('./../../src/__mock__/rnpack-utils-mock.js')
-);
+jest.mock('@rnpack/utils', () => require('./../../jest/rnpack-utils-mock'));
