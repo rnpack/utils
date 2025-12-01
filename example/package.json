@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "build:android": "react-native build-android --extra-params \"--no-daemon --console=plain -PreactNativeArchitectures=arm64-v8a\"",
-    "build:ios": "react-native build-ios --mode Debug"
+    "build:ios": "react-native build-ios --mode Debug",
+    "test": "jest"
   },
   "dependencies": {
     "buffer": "^6.0.3",
@@ -25,9 +26,11 @@
     "@react-native/babel-preset": "0.81.1",
     "@react-native/metro-config": "0.81.1",
     "@react-native/typescript-config": "0.81.1",
-    "@types/react": "^19.1.0",
+    "@testing-library/react-native": "^13.3.3",
+    "jest": "^30.2.0",
     "react-native-builder-bob": "^0.40.16",
-    "react-native-monorepo-config": "^0.1.9"
+    "react-native-monorepo-config": "^0.1.9",
+    "react-test-renderer": "19.1.0"
   },
   "engines": {
     "node": ">=20"
