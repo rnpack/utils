@@ -1,12 +1,12 @@
 module.exports = {
   preset: 'react-native',
   verbose: true,
-  setupFiles: ['./jest/jestSetupFile.js'],
+  setupFiles: ['./__mocks__/jestSetupFile.js'],
   testEnvironment: 'node',
   modulePathIgnorePatterns: [
     '<rootDir>/example/node_modules',
-    '<rootDir>/example/__test__',
-    '<rootDir>/example/__mock__',
+    '<rootDir>/example/__tests__',
+    '<rootDir>/example/__mocks__',
     '<rootDir>/lib/',
   ],
 };
